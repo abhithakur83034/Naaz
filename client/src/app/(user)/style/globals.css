@@ -1,0 +1,220 @@
+@import './allProduct.css';
+@import './footer.css';
+
+.slide-img{
+    height: 200px;
+}
+.nav{
+  position: relative;
+  left: -76px;
+  top: -9px;
+}
+.link {
+  text-decoration: none;
+  color: #0a0a0a;
+  margin-left: 30px;
+  font-family: ano-bold_regular, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .30000001192092896px;
+  line-height: 1.16667;
+  background-color: white;
+  color: black;
+  width: inherit;
+  padding: 9px 5px 4px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+  .error{
+    color: red;
+  }
+
+
+
+
+
+  /* upperheader */
+  
+  .nazz{
+    font-family: icons;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: none;
+    border-bottom: none;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+
+.center-border {
+  display: inline-block; 
+  background-color: black;
+  height: 30px; 
+  margin-top: 6px;
+  border-radius: 17px;
+  position: relative;
+  left: -77px;
+  width: calc(100% + 74px); 
+}
+
+  /* upperheader */
+
+  /*start signin style*/
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .checkbox {
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    position: relative;
+    top: -36px;
+  }
+  
+
+  /* styles/styles.css */
+/* 
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.btn-admin,
+.btn-user {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-admin {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-user {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-admin:hover, .btn-user:hover {
+  opacity: 0.8;
+}
+
+.link-container {
+  text-align: center;
+}
+
+.link-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+} */
+
+
+/* styles/styles.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-user {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-admin {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/* styles/styles.css */
+
+.card.active {
+  border: 2px solid rgba(0, 123, 255, 0.8); 
+  background-color: rgba(0, 123, 255, 0.1);
+}

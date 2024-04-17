@@ -1,0 +1,70 @@
+/* External CSS */
+.ap-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .ap-card {
+    width: 200px;
+    /* height: 250px; */
+    margin: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    border: hidden;
+  }
+  
+  .ap-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .ap-cardContent {
+    padding: 20px;
+  }
+  
+  .ap-cardHoverContent {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    transition: opacity 0.3s;
+  }
+  
+  .ap-card:hover .ap-cardHoverContent {
+    display: block;
+  }
+  
+  .ap-card .add-to-cart-btn {
+    display: none;
+  }
+  
+  .ap-card:hover .add-to-cart-btn {
+    display: block;
+  }
+  
+  /* Style for the button */
+  .add-to-cart-btn {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3;
+  }
+  

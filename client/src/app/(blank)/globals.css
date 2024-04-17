@@ -1,0 +1,164 @@
+.slide-img{
+    height: 500px;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+  }
+
+  .error{
+    color: red;
+  }
+
+  /*start signin style*/
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .checkbox {
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    position: relative;
+    top: -36px;
+  }
+  
+
+  /* styles/styles.css */
+/* 
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.btn-admin,
+.btn-user {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-admin {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-user {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-admin:hover, .btn-user:hover {
+  opacity: 0.8;
+}
+
+.link-container {
+  text-align: center;
+}
+
+.link-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+} */
+
+
+/* styles/styles.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-user {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-admin {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/* styles/styles.css */
+
+.card.active {
+  border: 2px solid rgba(0, 123, 255, 0.8); 
+  background-color: rgba(0, 123, 255, 0.1);
+}
