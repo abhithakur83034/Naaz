@@ -5,7 +5,9 @@
     color: #fff;
     /* padding: 40px 0; */
   }
-  
+  .footer-container{
+    max-width: 100%;
+  }
   .footerContent {
     margin-bottom: 30px;
   }

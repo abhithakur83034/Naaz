@@ -9,15 +9,15 @@ app.use(cors());
 
 
 app.use("/img", express.static("./uploads"));
-
+// app.use(express.static(__dirname+'/uploads'))
 
 const userRoute = require("./router/UserRoute");
-const adminRoute = require('./router/AdminRoute');
+const addProducts = require("./router/ProductRoute");
 
 
 
-app.use("/admin", adminRoute);
-app.use("/user", userRoute);
+app.use("/api/v1", userRoute);
+app.use("/api/v1", addProducts);
 
 
 

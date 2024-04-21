@@ -1,8 +1,10 @@
 'use client'
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'; 
 
 const Page = () => {
+    let router = useRouter();
     const storeUser = window.localStorage.getItem("user");
     let user = null;
     if (storeUser !== null) {
@@ -84,6 +86,21 @@ const Page = () => {
        }
         
     }
+
+    const handleProductClick = (item:any) => {
+        const navigationConfig = {
+            Lipstick: '/lips',
+            Foundation: '/face',
+            Mascara: '/eyes',
+            Eyeliner: '/eyes'
+        };
+    
+        const destination = navigationConfig[item];
+        if (destination) {
+            router.push(destination);
+        }
+    };
+    
     
     return (
         <Container fluid className='ap-container'>
@@ -105,17 +122,20 @@ const Page = () => {
                 ))}
             </Row>
             <Row>
-                {listProducts.map(product => (
-                    <Col key={product.id} className='my-3'>
-                        <Card  className='ap-card'>
-                            <Card.Img src={product.image} height={200} />
-                            <Card.Body>
-                                <Card.Title>{product.name}</Card.Title>
-                                </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
+    {listProducts.map(product => (
+        <Col key={product.id} className='my-3'>
+            <div onClick={() => handleProductClick(product.name)}>
+                <Card className='ap-card'>
+                    <Card.Img src={product.image} height={200} />
+                    <Card.Body>
+                        <Card.Title>{product.name}</Card.Title>
+                    </Card.Body>
+                </Card>
+            </div>
+        </Col>
+    ))}
+</Row>
+
         </Container>
     );
 }

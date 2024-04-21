@@ -13,18 +13,13 @@ function Header() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse className="justify-content-center" id="responsive-navbar-nav">
         <Nav className="m-2 ">
-        <Link href="/" className='link'>NEW</Link>
-        <Link href="/" className='link'>LIPS</Link>
-          <Link href="/about" className='link'>EYES</Link>
-          <Link href="/ourservices" className='link'>FACE</Link>
-          <Link href="/contact" className='link'>SKINCARE</Link>
-          <Link href="/contact" className='link'>OFFERS</Link>
-          <Link href="/ourservices" className='link'>SERVICE</Link>
-          {/* <Link href="/" className='link'>Home</Link>
-          <Link href="/about" className='link'>About Us</Link>
-          <Link href="/ourservices" className='link'>Service</Link>
-          <Link href="/contact" className='link'>Contact Us</Link> */}
-          {/* <Link href="/signin" className='link'>Login</Link> */}
+        <Nav.Link as={Link} href="/" className='link'>Home</Nav.Link>
+        <Nav.Link as={Link} href="/lips" className='link'>LIPS</Nav.Link>
+          <Nav.Link as={Link} href="/eyes" className='link'>EYES</Nav.Link>
+          <Nav.Link as={Link} href="/face" className='link'>FACE</Nav.Link>
+          <Nav.Link as={Link} href="/skincare" className='link'>SKINCARE</Nav.Link>
+          <Nav.Link as={Link} href="/offerpage" className='link'>OFFERS</Nav.Link>
+          <Nav.Link as={Link} href="/ourservices" className='link'>SERVICE</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

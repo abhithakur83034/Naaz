@@ -52,6 +52,19 @@
     font-family: cursive;
     font-size: 40px;
 }
+.nazz-icon{
+  font-family: icons;
+  display: inline-block;
+  /* vertical-align: middle; */
+  /* line-height: 1; */
+  /* font-weight: 100; */
+  font-style: normal;
+  speak: none;
+  text-decoration: none;
+  border-bottom: none;
+  font-family: cursive;
+  font-size: 27px;
+}
 
 
 .center-border {
@@ -155,7 +168,7 @@
 /* styles/styles.css */
 
 .container {
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 40px;
 }

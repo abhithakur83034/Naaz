@@ -2,12 +2,13 @@
 
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Index = () => {
   return (
    
     <footer className="footer"> 
-      <Container>
+      <Container className="footer-container">
         <Row>
           <Col >
             <div className="footerContent"> 
@@ -31,16 +32,16 @@ const Index = () => {
           <Col >
             <div className="footerContent"> 
               <h3>Follow Us</h3>
-              <ul className="list-unstyled socialIcons">
-                <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+              <ul className="list-unstyled socialIcons">              
+                <li><a href="#"><FaFacebook color="blue" className="ic" /></a></li>
+                <li><a href="#"> <FaTwitter color="blue" className="ic" /></a></li>
+                <li><a href="#"><FaInstagram color="blue" className="ic" /></a></li>
               </ul>
             </div>
           </Col>
         </Row>
       </Container>
-      <div className="copyRight"> {/* Remove className={styles.copyRight} */}
+      <div className="copyRight"> 
         <Container>
           <Row>
             <Col>
