@@ -1,7 +1,7 @@
 const Product = require('../model/ProductModel');
 
 const ProductController = {
-   addProducts : async(req,res)=>{
+  addProducts : async(req,res)=>{
        try {
         const path = req.file ? req.file.filename : null;;
         const productData = {
@@ -36,7 +36,7 @@ const ProductController = {
       }
     },
 
-    getProducts: async (req, res) => {
+  getProducts: async (req, res) => {
         try {
           const data = await Product.find().sort({ created_at: -1 });
           if (data.length > 0) {
